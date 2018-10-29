@@ -1,4 +1,3 @@
-// JavaScript Document
 $(document).ready(function() {
 var x = 'x';
 var o = 'o';
@@ -88,13 +87,13 @@ $("#game li").click(function(){
     else{
         count++
         $(this).text(x)
-        $(this).addClass("disable o btn-danger")
-        var user_x = ticTacLogic(o);
+        $(this).addClass("disable x btn-danger")
+        var user_x = ticTacLogic(x);
           if (user_x == "x"){
              alert("X wins")
              count = 0
-             o_win++
-             $("#x_win").text(o_win)
+             x_win++
+             $("#x_win").text(x_win)
          }
         }
 
